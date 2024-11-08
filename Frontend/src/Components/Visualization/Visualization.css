@@ -1,0 +1,83 @@
+.visualization-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f6f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.visualization-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #66a6ff, #f47c7c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.chart-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart-container {
+  flex: 1 1 45%;
+  max-width: 500px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.chart-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.btn-home {
+  background-color: #398d7f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-home:hover {
+  background-color: #184f45;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .visualization-container h2 {
+    font-size: 24px;
+  }
+
+  .chart-container h3 {
+    font-size: 16px;
+  }
+}
